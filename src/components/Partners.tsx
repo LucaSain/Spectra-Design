@@ -1,7 +1,9 @@
 export default function Partners() {
   return (
     <div className="h-[50vh] w-screen flex justify-center items-center">
-      <div className="text-xl">Partners</div>
+      <h2 id="partners" className="text-xl">
+        Partners
+      </h2>
     </div>
   );
 }

@@ -1,42 +1,8 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 
-export default function Hero() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setVisible(true);
-    }, 2000); // wait 3 seconds before starting fade-in
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  return (
-    <div className="h-screen w-screen relative">
-      <div className="h-full w-full absolute -z-10">
-        <div className="bg-gradient-to-t from-base-100 via-base-100/30 to-base-100/30   z-10 h-[100vh] w-screen absolute top-0 left-0 "></div>
-        <FadingLoopVideo />
-      </div>
-      <div className="h-screen w-screen flex flex-col sm:flex-row ">
-        <div className="w-full h-full basis-1/2"></div>
-        <h1
-          id="spectra"
-          style={{
-            opacity: visible ? 1 : 0,
-            transition: "opacity 2s ease-in-out",
-          }}
-          className="w-full text-4xl font-semibold flex h-full justify-center items-center basis-1/2"
-        >
-          Spectra Design
-        </h1>
-      </div>
-    </div>
-  );
-}
-
-function FadingLoopVideo() {
+export default function FadingLoopVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -106,8 +72,9 @@ function FadingLoopVideo() {
       ref={videoRef}
       src="/spectra-background.mp4"
       muted
-      className="object-cover"
       playsInline
+      height={1080}
+      width={1920}
       style={{
         width: "100%",
         height: "100%",
