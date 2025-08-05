@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 
 export default function Hero() {
@@ -21,7 +22,7 @@ export default function Hero() {
       </div>
       <div className="h-screen w-screen flex flex-col sm:flex-row ">
         <div className="w-full h-full basis-1/2"></div>
-        <h1
+        <div
           id="spectra"
           style={{
             opacity: visible ? 1 : 0,
@@ -29,8 +30,14 @@ export default function Hero() {
           }}
           className="w-full text-4xl font-semibold flex h-full justify-center items-center basis-1/2"
         >
-          Spectra Design
-        </h1>
+          <Image
+            alt=""
+            src="/logo.svg"
+            height={1000}
+            width={2000}
+            className="h-full"
+          />
+        </div>
       </div>
     </div>
   );

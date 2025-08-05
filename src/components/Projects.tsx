@@ -27,7 +27,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className="w-[80vw] h-[70vh]  sticky shadow-2xl rounded-2xl border-2 border-slate-700/20"
+      className="w-[80vw] h-[70vh]  sticky shadow-2xl rounded-2xl border-2 border-slate-700/60"
       style={{
         top: `${index * 8}vh`,
       }}
@@ -35,7 +35,7 @@ const ProjectCard = ({
       <div
         className="absolute z-0 inset-0 bg-base-200 rounded-2xl"
         style={{
-          filter: `brightness(${index * 10}%)`,
+          filter: `brightness(${index * 20}%)`,
         }}
       ></div>
       <div className="inset-0 relative flex flex-col sm:flex-row p-8 h-full">

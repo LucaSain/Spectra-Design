@@ -25,7 +25,7 @@ export default function Beliefs() {
           width={1920}
           className="object-cover top-0  sticky h-screen w-screen"
         />
-        <div className="text-lg sticky top-[10vh] sm:top-[30vh] sm:left-[70vw] pr-10  pb-10 mx-3 sm:max-w-[40%] z-40 sm:z-30 ">
+        <div className="text-lg sticky top-[10vh] sm:top-[30vh] sm:left-[70vw] pr-10  pb-10 mx-3 sm:max-w-[40%] z-50 sm:z-30 ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu enim
           ut libero vestibulum maximus. Nam odio dolor, accumsan eget posuere
           vitae, imperdiet a lorem. Sed vitae lacus feugiat enim consequat
@@ -40,7 +40,7 @@ export default function Beliefs() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-transparent via-base-100/70 to-base-100  z-30 h-screen w-screen absolute bottom-0 "></div>
+      <div className="bg-gradient-to-b from-transparent via-base-100/70 to-base-100  z-20 h-screen w-screen absolute bottom-0 "></div>
     </div>
   );
 }
