@@ -52,14 +52,16 @@ const ProjectCard = ({
           filter: `brightness(${index * 20}%)`,
         }}
       ></div>
-      <div className="inset-0 relative h-full">
-        <Image
-          src={imageUrl}
-          height={1000}
-          width={2000}
-          alt=""
-          className=" aspect-video h-full rounded-lg basis-1/2 object-cover object-center"
-        />
+      <div className="inset-0 relative h-full flex justify-center">
+        <div className="aspect-video h-full">
+          <Image
+            src={imageUrl}
+            height={1000}
+            width={2000}
+            alt=""
+            className=" aspect-video h-full rounded-lg w-full object-contain object-center"
+          />
+        </div>
       </div>
     </div>
   );
