@@ -41,25 +41,25 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className="w-[80vw] h-[70vh]  sticky shadow-2xl rounded-2xl "
+      className="w-[80vw] h-[70vh] sticky shadow-2xl rounded-2xl "
       style={{
         top: `${index * 8}vh`,
       }}
     >
       <div
-        className="absolute z-0 inset-0 bg-base-200 rounded-2xl"
-        style={{
-          filter: `brightness(${index * 20}%)`,
-        }}
+        className="absolute z-0 inset-0 rounded-2xl border-0"
+        // style={{
+        //   filter: `brightness(${index * 20}%)`,
+        // }}
       ></div>
-      <div className="inset-0 relative h-full flex justify-center">
+      <div className="inset-0 relative h-full flex justify-center border-0">
         <div className="aspect-video h-full">
           <Image
             src={imageUrl}
             height={1000}
             width={2000}
             alt=""
-            className=" aspect-video h-full rounded-lg w-full object-contain object-center"
+            className="h-full rounded-lg w-full object-contain object-center border-0"
           />
         </div>
       </div>
