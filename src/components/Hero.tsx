@@ -28,7 +28,7 @@ export default function Hero() {
             opacity: visible ? 1 : 0,
             transition: "opacity 2s ease-in-out",
           }}
-          className="w-full text-4xl font-semibold flex h-full justify-center items-center basis-1/2"
+          className="w-full text-4xl font-semibold flex scale-75 h-full justify-center items-center basis-1/2"
         >
           <Image
             alt=""
@@ -113,7 +113,7 @@ function FadingLoopVideo() {
       ref={videoRef}
       src="/spectra-background.mp4"
       muted
-      className="object-cover"
+      className="object-cover transform rotate-180"
       playsInline
       style={{
         width: "100%",

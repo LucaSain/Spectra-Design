@@ -1,9 +1,17 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="footer footer-horizontal footer-start bg-base-100 border-t-2 border-dashed  border-base-content/20 p-10">
       <aside>
         <p className="font-bold">
-          <b className="text-3xl ">Spectra Design</b>
+          <Image
+            alt=""
+            src="/logo.svg"
+            height={1000}
+            width={1000}
+            className="h-48 w-60 scale-125"
+          />
           <br />
           <br />
           Providing reliable tech since 1992
