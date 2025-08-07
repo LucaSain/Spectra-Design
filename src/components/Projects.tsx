@@ -1,12 +1,26 @@
 import Image from "next/image";
 
 export default function Projects() {
+  const projects = [
+    {
+      imageUrl: "/proiecte/1.jpg",
+    },
+    {
+      imageUrl: "/proiecte/2.jpg",
+    },
+    {
+      imageUrl: "/proiecte/3.jpg",
+    },
+    {
+      imageUrl: "/proiecte/4.jpg",
+    },
+  ];
   return (
     <div className="min-h-screen h-max py-10 w-screen flex flex-col items-center">
       <div className="text-4xl pb-[50vh] sticky top-[20vh]">Projects</div>
       <div className="pb-[10vh]">
-        {[1, 2, 3, 4].map((x, i) => (
-          <ProjectCard key={i} index={i + 1} imageUrl="/beliefs.jpg" />
+        {projects.map((project, i) => (
+          <ProjectCard key={i} index={i + 1} imageUrl={project.imageUrl} />
         ))}
       </div>
       <div className="btn btn-xl z-10">More</div>
@@ -38,18 +52,13 @@ const ProjectCard = ({
           filter: `brightness(${index * 20}%)`,
         }}
       ></div>
-      <div className="inset-0 relative flex flex-col sm:flex-row p-8 h-full">
-        <div className="basis-1/2">
-          <div className=" text-white text-2xl rounded-2xl">
-            Project {index + 1}
-          </div>
-        </div>
+      <div className="inset-0 relative p-8 h-full">
         <Image
           src={imageUrl}
           height={1000}
-          width={1000}
+          width={2000}
           alt=""
-          className="w-full h-full rounded-lg basis-1/2 object-cover object-center"
+          className=" aspect-video h-full rounded-lg basis-1/2 object-cover object-center"
         />
       </div>
     </div>

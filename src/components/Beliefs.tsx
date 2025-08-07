@@ -17,7 +17,7 @@ export default function Beliefs() {
       bg-[radial-gradient(circle,#73737350_1px,transparent_1px)]
       bg-[size:10px_10px]"
         /> */}
-        <div className="h-full w-screen bg-gradient-to-tr from-transparent via-base-100 to-base-100/70 z-10 absolute top-0"></div>
+        <div className="h-full w-screen bg-gradient-to-tr from-transparent via-base-100/70 to-base-100/70 z-10 absolute top-0"></div>
         <Image
           src="/beliefs.jpg"
           alt="Background"
