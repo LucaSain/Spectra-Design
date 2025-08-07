@@ -41,7 +41,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className="w-[80vw] h-[70vh]  sticky shadow-2xl rounded-2xl border-2 border-slate-700/60"
+      className="w-[80vw] h-[70vh]  sticky shadow-2xl rounded-2xl "
       style={{
         top: `${index * 8}vh`,
       }}
@@ -52,7 +52,7 @@ const ProjectCard = ({
           filter: `brightness(${index * 20}%)`,
         }}
       ></div>
-      <div className="inset-0 relative p-8 h-full">
+      <div className="inset-0 relative h-full">
         <Image
           src={imageUrl}
           height={1000}
